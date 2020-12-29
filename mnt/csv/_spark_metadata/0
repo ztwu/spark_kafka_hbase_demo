@@ -1,0 +1,3 @@
+v1
+{"path":"file:///D:/data/idea/spark_kafka_hbase_demo/mnt/csv/id=001/part-00000-46c8c859-2381-4ff5-a854-f7f5737f2b47.c000.csv","size":372,"isDir":false,"modificationTime":1607411123715,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///D:/data/idea/spark_kafka_hbase_demo/mnt/csv/id=002/part-00000-8375a2b3-32f4-474a-8d1f-7a3ef975cc06.c000.csv","size":465,"isDir":false,"modificationTime":1607411123852,"blockReplication":1,"blockSize":33554432,"action":"add"}

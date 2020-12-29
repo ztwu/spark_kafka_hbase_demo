@@ -1,0 +1,3 @@
+v1
+{"path":"file:///D:/data/idea/spark_kafka_hbase_demo/mnt/data/id=001/part-00000-7f36226a-db24-43df-b659-36f721462b4f.c000.snappy.parquet","size":476,"isDir":false,"modificationTime":1607410413890,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///D:/data/idea/spark_kafka_hbase_demo/mnt/data/id=002/part-00000-fd202ad5-7e8a-45b7-a03d-b22416be30dc.c000.snappy.parquet","size":474,"isDir":false,"modificationTime":1607410414058,"blockReplication":1,"blockSize":33554432,"action":"add"}

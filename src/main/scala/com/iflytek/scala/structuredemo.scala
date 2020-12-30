@@ -8,6 +8,7 @@ import com.iflytek.scala.foreachwriter.JDBCSink
 import org.apache.spark.sql.{Encoders, functions}
 import org.apache.spark.sql.streaming.{OutputMode, Trigger}
 import org.apache.spark.sql.types.{StringType, StructType}
+import org.apache.spark.sql.functions._
 
 case class MyEntity(id: String, eventtime: Timestamp)
 
@@ -80,7 +81,7 @@ object structuredemo {
       .groupBy(
         functions.window(data1.col("eventtime"), "1 minutes", "1 minutes"),
         col("id")
-      ).count()
+      ).agg(count("id") as "count")
       .withColumn("value",
         concat_ws("_",$"id",$"count"))
 

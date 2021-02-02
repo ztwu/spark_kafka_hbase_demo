@@ -44,7 +44,21 @@ object sinkdemo {
 //      .option("inferSchema", true)
 //      .option("header", true)
 //      .save("output2.csv")
-//
+
+    /**
+      * +---------------------+
+      * |value                |
+      * +---------------------+
+      * |name,age,hobby       |
+      * |json,23,running      |
+      * |charles,32,basketball|
+      * |tom,28,football      |
+      * |lili,24,running      |
+      * |bob,20,swimming      |
+      * +---------------------+
+      *
+      */
+    //
 //    import org.apache.spark.sql.functions._
 ////    val allClumnName: String = data.columns.mkString(",")
 ////    val data_new = data.selectExpr(s"concat_ws(',',$allClumnName)")

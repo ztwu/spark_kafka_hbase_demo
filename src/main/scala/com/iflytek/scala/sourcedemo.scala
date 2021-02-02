@@ -45,10 +45,25 @@ object sourcedemo {
 //      .load("datatest.parquet")
 //    data4.select($"name").foreach(x=>println(x))
 
-//    val data5 = spark.read
-//      .format("text")
-//      .load("data.txt")
-//    data5.foreach(x=>println(x))
+    val data5 = spark.read
+      .format("text")
+      .load("data.txt")
+    data5.show(false)
+    data5.foreach(x=>println(x))
+
+    /**
+      * +---------------------+
+      * |value                |
+      * +---------------------+
+      * |name,age,hobby       |
+      * |json,23,running      |
+      * |charles,32,basketball|
+      * |tom,28,football      |
+      * |lili,24,running      |
+      * |bob,20,swimming      |
+      * +---------------------+
+      *
+      */
 
 //    val data6 = spark.read
 //      .format("jdbc")

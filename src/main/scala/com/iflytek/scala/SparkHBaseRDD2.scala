@@ -8,6 +8,9 @@ import org.apache.hadoop.hbase.util.Bytes
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 
+/**
+  * 读取hbase数据
+  */
 object SparkHBaseRDD2 {
   def main(args: Array[String]) {
     // 屏蔽不必要的日志显示在终端上

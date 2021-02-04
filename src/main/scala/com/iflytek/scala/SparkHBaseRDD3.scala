@@ -12,6 +12,9 @@ import org.apache.spark.sql.SparkSession
 
 import scala.collection.mutable.ListBuffer
 
+/**
+  * 批量写入hbase，基于HFile文件
+  */
 object SparkHBaseRDD3 {
 
   def main(args: Array[String]): Unit = {

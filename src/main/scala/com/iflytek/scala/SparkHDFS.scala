@@ -46,7 +46,9 @@ class RDDMultipleTextOutputFormat extends MultipleTextOutputFormat[Any, Any] {
   //  key和value就是我们RDD的Key和Value，
   //  而name参数是每个Reduce的编号。本例中没有使用该参数，
   //  而是直接将同一个Key的数据输出到同一个文件中。执行：
-  override def generateFileNameForKeyValue(key: Any, value: Any, name: String): String =
+  override def generateFileNameForKeyValue(key: Any,
+                                           value: Any,
+                                           name: String): String =
     key.asInstanceOf[String]
 
 }

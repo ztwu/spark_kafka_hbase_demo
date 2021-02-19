@@ -87,11 +87,13 @@ class JdbcRDD(
       def hasNext: Boolean = rs.next()
       def next: Row = {
         val values = columns.map {
-          case "id" => rs.getInt("id")
-          case "emp_name" => rs.getString("emp_name")
-          case "dep_name" => rs.getString("dep_name")
-          case "salary" => rs.getBigDecimal("salary")
-          case "age" => rs.getBigDecimal("age")
+          x => x match {
+            case "id" => rs.getInt("id")
+            case "emp_name" => rs.getString("emp_name")
+            case "dep_name" => rs.getString("dep_name")
+            case "salary" => rs.getBigDecimal("salary")
+            case "age" => rs.getBigDecimal("age")
+          }
         }
         Row.fromSeq(values)
       }
